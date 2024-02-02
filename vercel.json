@@ -1,5 +1,11 @@
 {
   "rewrites": [
+    { "source": "/(.*)", "function": "nombre-de-tu-funcion-flask" }
+  ]
+}
+
+{
+  "rewrites": [
     { "source": "/(.*)", "destination": "/api/index" }
   ]
 }
