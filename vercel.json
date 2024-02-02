@@ -1,11 +1,11 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "function": "nombre-de-tu-funcion-flask" }
+    { "source": "/(.*)", "function": "AlphaFoldXploR_read" }
   ]
 }
 
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index" }
+    { "source": "/(.*)", "destination": "/api/download" }
   ]
 }
