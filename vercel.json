@@ -1,11 +1,5 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "function": "AlphaFoldXploR_read" }
-  ]
-}
-
-{
-  "rewrites": [
     { "source": "/(.*)", "destination": "/api/download" }
   ]
 }
