@@ -28,7 +28,15 @@ def upload_file():
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             return redirect(url_for('download_file', name=filename))
-    return '''
+    return 
+
+from flask import send_from_directory
+
+@app.route('/uploads/<name>')
+def download_file(name):
+    return send_from_directory(app.config["UPLOAD_FOLDER"], name)
+    
+    '''
     <!doctype html>
     <title>Upload new File</title>
     <h1>Upload new File</h1>
